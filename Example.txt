@@ -1,0 +1,63 @@
+cse$ cd ~/workspace/ForwardChain
+cse$ java -cp bin RuleBaseSystem
+java RuleBaseSystem
+ADD:my-car is inexpensive
+ADD:my-car has a VTEC engine
+ADD:my-car is stylish
+ADD:my-car has several color models
+ADD:my-car has several seats
+ADD:my-car is a wagon
+CarRule1 [?x is inexpensive]->?x is made in Japan
+CarRule2 [?x is small]->?x is made in Japan
+CarRule3 [?x is expensive]->?x is a foreign car
+CarRule4 [?x is big, ?x needs a lot of gas]->?x is a foreign car
+CarRule5 [?x is made in Japan, ?x has Toyota's logo]->?x is a Toyota
+CarRule6 [?x is made in Japan, ?x is a popular car]->?x is a Toyota
+CarRule7 [?x is made in Japan, ?x has Honda's logo]->?x is a Honda
+CarRule8 [?x is made in Japan, ?x has a VTEC engine]->?x is a Honda
+CarRule9 [?x is a Toyota, ?x has several seats, ?x is a wagon]->?x is a Carolla Wagon
+CarRule10 [?x is a Toyota, ?x has several seats, ?x is a hybrid car]->?x is a Prius
+CarRule11 [?x is a Honda, ?x is stylish, ?x has several color models, ?x has several seats, ?x is a wagon]->?x is an Accord Wagon
+CarRule12 [?x is a Honda, ?x has an aluminium body, ?x has only 2 seats]->?x is a NSX
+CarRule13 [?x is a foreign car, ?x is a sports car, ?x is stylish, ?x has several color models, ?x has a big engine]->?x is a Lamborghini Countach
+CarRule14 [?x is a foreign car, ?x is a sports car, ?x is red, ?x has a big engine]->?x is a Ferrari F50
+CarRule15 [?x is a foreign car, ?x is a good face]->?x is a Jaguar XJ8
+apply rule:CarRule1
+Success: my-car is made in Japan
+ADD:my-car is made in Japan
+apply rule:CarRule2
+apply rule:CarRule3
+apply rule:CarRule4
+apply rule:CarRule5
+apply rule:CarRule6
+apply rule:CarRule7
+apply rule:CarRule8
+Success: my-car is a Honda
+ADD:my-car is a Honda
+apply rule:CarRule9
+apply rule:CarRule10
+apply rule:CarRule11
+Success: my-car is an Accord Wagon
+ADD:my-car is an Accord Wagon
+apply rule:CarRule12
+apply rule:CarRule13
+apply rule:CarRule14
+apply rule:CarRule15
+Working Memory[my-car is inexpensive, my-car has a VTEC engine, my-car is stylish, my-car has several color models, my-car has several seats, my-car is a wagon, my-car is made in Japan, my-car is a Honda, my-car is an Accord Wagon]
+apply rule:CarRule1
+apply rule:CarRule2
+apply rule:CarRule3
+apply rule:CarRule4
+apply rule:CarRule5
+apply rule:CarRule6
+apply rule:CarRule7
+apply rule:CarRule8
+apply rule:CarRule9
+apply rule:CarRule10
+apply rule:CarRule11
+apply rule:CarRule12
+apply rule:CarRule13
+apply rule:CarRule14
+apply rule:CarRule15
+Working Memory[my-car is inexpensive, my-car has a VTEC engine, my-car is stylish, my-car has several color models, my-car has several seats, my-car is a wagon, my-car is made in Japan, my-car is a Honda, my-car is an Accord Wagon]
+No rule produces a new assertion

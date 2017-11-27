@@ -1,0 +1,77 @@
+rule   "Z1"
+if     "?x has 6-legs"
+then   "?x is a insect"
+
+rule   "Z2"
+if     "?x has wings"
+       "?x has horn"
+       "?x is a insect"
+then   "?x is a beetle"
+
+rule   "Z3"
+if     "?x has 4-wings"
+       "?x has antennae"
+       "?x is a insect"
+then   "?x is a butterfly"
+
+rule   "Z4"
+if     "?x is a butterfly"
+       "?x is yellow-and-black"
+then   "?x is a Swallowtail butterfly"
+
+rule   "Z5"
+if     "?x is a butterfly"
+       "?x is white"
+then   "?x is a Cabbage butterfly"
+
+rule   "Z6"
+if     "?x is a butterfly"
+       "?x is black"
+then   "?x is a Spangle"
+
+rule   "Z7"
+if     "?x has 4-wings"
+       "?x is yellow-and-black"
+       "?x has needle"
+then   "?x is a bee"
+
+rule   "Z8"
+if     "?x has 8-legs"
+       "?x has silk"
+then   "?x is a spider"
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
+
+rule   "Z"
+if     ""
+then   ""
