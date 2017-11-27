@@ -74,4 +74,4 @@ then   ""
 
 rule   "Z"
 if     ""
-then   ""
+then   "a"
